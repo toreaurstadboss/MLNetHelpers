@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLNetHelpers.Lib", "..\MLNe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentimentAnalysis", "..\SentimentAnalysis\SentimentAnalysis.csproj", "{790D1313-57FB-48D3-9B2A-A8CB7E091E21}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveAndLoadTrainedModels", "..\SaveAndLoadTrainedModels\SaveAndLoadTrainedModels.csproj", "{B3763744-A0D2-47AF-A5CD-ECCFC0C68F47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{790D1313-57FB-48D3-9B2A-A8CB7E091E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{790D1313-57FB-48D3-9B2A-A8CB7E091E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{790D1313-57FB-48D3-9B2A-A8CB7E091E21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3763744-A0D2-47AF-A5CD-ECCFC0C68F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3763744-A0D2-47AF-A5CD-ECCFC0C68F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3763744-A0D2-47AF-A5CD-ECCFC0C68F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3763744-A0D2-47AF-A5CD-ECCFC0C68F47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
