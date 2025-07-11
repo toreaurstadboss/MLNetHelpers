@@ -37,7 +37,7 @@ Sentiment: This was a very bad streak. The waiter was however very nice and help
 =============== End of Predictions ===============
 
 
- ====== Prediciton Test of loaded model with multiple samples =======
+ ====== Prediction Test of loaded model with multiple samples =======
 Sentiment: This was a horrible meal | Prediction: Negative | Probability: 0.04314197 Score -3.0991588
 Sentiment: I love this spaghetti | Prediction: Positive | Probability: 0.99720186 Score 5.87599
 ===== End of predictions =====

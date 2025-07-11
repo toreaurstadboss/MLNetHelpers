@@ -2,7 +2,7 @@
 
 namespace SentimentAnalysis
 {
-    
+
     public class SentimentPrediction : SentimentData
     {
 

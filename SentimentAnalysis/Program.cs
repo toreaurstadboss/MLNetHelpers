@@ -1,7 +1,5 @@
 ﻿using Microsoft.ML;
 using Microsoft.ML.Data;
-using SentimentAnalysis;
-using System.Data;
 using static Microsoft.ML.DataOperationsCatalog;
 
 namespace SentimentAnalysis
@@ -10,7 +8,7 @@ namespace SentimentAnalysis
     {
 
         private static string _dataPath = Path.Combine(Environment.CurrentDirectory, "data", "yelp_labelled.txt");
-      
+
         static void Main(string[] args)
         {
             var mlContext = new MLContext();
