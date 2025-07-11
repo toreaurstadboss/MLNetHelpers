@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36221.1 d17.14
+VisualStudioVersion = 17.14.36221.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLNetHelpers", "MLNetHelpers.csproj", "{71A03618-BB74-4611-A805-5617591416B2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLNetHelpers.Lib", "..\MLNetHelpers.Lib\MLNetHelpers.Lib.csproj", "{7663672F-83D7-45DB-8526-34D5395D2AAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentimentAnalysis", "..\SentimentAnalysis\SentimentAnalysis.csproj", "{790D1313-57FB-48D3-9B2A-A8CB7E091E21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7663672F-83D7-45DB-8526-34D5395D2AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7663672F-83D7-45DB-8526-34D5395D2AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7663672F-83D7-45DB-8526-34D5395D2AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{790D1313-57FB-48D3-9B2A-A8CB7E091E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{790D1313-57FB-48D3-9B2A-A8CB7E091E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{790D1313-57FB-48D3-9B2A-A8CB7E091E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{790D1313-57FB-48D3-9B2A-A8CB7E091E21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
