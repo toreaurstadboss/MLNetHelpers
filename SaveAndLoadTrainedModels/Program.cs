@@ -52,6 +52,14 @@ namespace SaveAndLoadTrainedModels
 
             Console.WriteLine($"Saved ML.Net model to output directory: {Path.Combine(Environment.CurrentDirectory, "model.zip")}");
 
+            // Save ONNX model (ONNX = Open Neural Network Exchange)    
+
+            using (FileStream stream = File.Create("onnx_model.onnx"))
+            {
+                mlContext.Model.ConvertToOnnx(trainedModel, data, stream);
+            }
+
+            Console.WriteLine($"Saved ONNX ML.Net model to output directory: {Path.Combine(Environment.CurrentDirectory, "onnx_model.onnx")}");
         }
 
     }
