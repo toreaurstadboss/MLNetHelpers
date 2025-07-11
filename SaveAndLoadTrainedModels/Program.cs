@@ -1,6 +1,7 @@
 ﻿using Microsoft.ML;
 using Microsoft.ML.Data;
 using Microsoft.ML.Trainers;
+using Microsoft.ML.Transforms.Onnx;
 
 namespace SaveAndLoadTrainedModels
 {
@@ -47,7 +48,7 @@ namespace SaveAndLoadTrainedModels
             // train model - regression model
             ITransformer trainedModel = pipelineEstimator.Fit(data);
 
-            // Save model
+            // Save model (default format)
             mlContext.Model.Save(trainedModel, data.Schema, "model.zip");
 
             Console.WriteLine($"Saved ML.Net model to output directory: {Path.Combine(Environment.CurrentDirectory, "model.zip")}");
@@ -60,6 +61,34 @@ namespace SaveAndLoadTrainedModels
             }
 
             Console.WriteLine($"Saved ONNX ML.Net model to output directory: {Path.Combine(Environment.CurrentDirectory, "onnx_model.onnx")}");
+
+            //Define DataViewSchema for data preparation pipeline and trained model 
+            DataViewSchema modelSchema;
+
+            // Load trained model
+            ITransformer loadedTrainedModel = mlContext.Model.Load("model.zip", out modelSchema);
+
+            // Load in new data
+            HousingData[] newHousingData = new HousingData[]
+            {
+                new()
+                {
+                    Size = 1000f,
+                    HistoricalPrices = new[] { 300_000f, 350_000f, 450_000f },
+                    CurrentPrice = 550_00f
+                }
+            };
+
+            // Load in Onnx model
+            OnnxScoringEstimator estimator = mlContext.Transforms.ApplyOnnxModel("onnx_model.onnx");           
+
+            IDataView newHousingDataView = mlContext.Data.LoadFromEnumerable(newHousingData);
+
+            // Fitted model using the saved ONNX model from previous training
+            var loadedModel = estimator.Fit(newHousingDataView);
+
+           
+
         }
 
     }
