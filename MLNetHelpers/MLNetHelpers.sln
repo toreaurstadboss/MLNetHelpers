@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomMLModel", "..\CustomM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLModel1_ConsoleApp1", "..\MLModel1_ConsoleApp1\MLModel1_ConsoleApp1.csproj", "{A617012C-8E3D-586B-ED4C-D187D8C3AC1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectDetectionTutorial", "..\ObjectDetectionTutorial\ObjectDetectionTutorial.csproj", "{89408E5F-71C4-473F-A10C-7225FBD21BED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{A617012C-8E3D-586B-ED4C-D187D8C3AC1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A617012C-8E3D-586B-ED4C-D187D8C3AC1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A617012C-8E3D-586B-ED4C-D187D8C3AC1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89408E5F-71C4-473F-A10C-7225FBD21BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89408E5F-71C4-473F-A10C-7225FBD21BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89408E5F-71C4-473F-A10C-7225FBD21BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89408E5F-71C4-473F-A10C-7225FBD21BED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
