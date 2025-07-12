@@ -16,4 +16,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\images\stop-signs\test-images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="data\images\stop-signs\test-images\stevo-FIaR_f_U35k-unsplash.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
