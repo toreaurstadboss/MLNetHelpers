@@ -1,0 +1,317 @@
+﻿{
+  "Scenario": "Classification",
+  "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": true,
+    "Type": "TabularFile",
+    "FilePath": "C:\\src\\MLNetHelpers\\CustomMLModel\\wikipedia-detox-250-line-data.tsv",
+    "Delimiter": "\t",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "Sentiment",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "SentimentText",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "LoggedIn",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.743505110026849,
+        "RuntimeInSeconds": 0.755,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e8 * e11",
+          "e0": {
+            "OutputColumnNames": [
+              "LoggedIn"
+            ],
+            "InputColumnNames": [
+              "LoggedIn"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "SentimentText",
+            "OutputColumnName": "SentimentText"
+          },
+          "e11": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "LoggedIn",
+              "SentimentText"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "OutputColumnName": "Sentiment",
+            "InputColumnName": "Sentiment",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e8": {
+            "L1Regularization": 0.3270459,
+            "L2Regularization": 0.039795443,
+            "LabelColumnName": "Sentiment",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.72805732110079935,
+        "RuntimeInSeconds": 0.61,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e8 * e11",
+          "e0": {
+            "OutputColumnNames": [
+              "LoggedIn"
+            ],
+            "InputColumnNames": [
+              "LoggedIn"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "SentimentText",
+            "OutputColumnName": "SentimentText"
+          },
+          "e11": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "LoggedIn",
+              "SentimentText"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "OutputColumnName": "Sentiment",
+            "InputColumnName": "Sentiment",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e8": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 0.11815352,
+            "LabelColumnName": "Sentiment",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.699687357730836,
+        "RuntimeInSeconds": 0.491,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e8 * e11",
+          "e0": {
+            "OutputColumnNames": [
+              "LoggedIn"
+            ],
+            "InputColumnNames": [
+              "LoggedIn"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "SentimentText",
+            "OutputColumnName": "SentimentText"
+          },
+          "e11": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "LoggedIn",
+              "SentimentText"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "OutputColumnName": "Sentiment",
+            "InputColumnName": "Sentiment",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e8": {
+            "L1Regularization": 0.48474637,
+            "L2Regularization": 0.30662268,
+            "LabelColumnName": "Sentiment",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.67004061960583694,
+        "RuntimeInSeconds": 1.306,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e6 * e11",
+          "e0": {
+            "OutputColumnNames": [
+              "LoggedIn"
+            ],
+            "InputColumnNames": [
+              "LoggedIn"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "SentimentText",
+            "OutputColumnName": "SentimentText"
+          },
+          "e11": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "LoggedIn",
+              "SentimentText"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "OutputColumnName": "Sentiment",
+            "InputColumnName": "Sentiment",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e6": {
+            "NumberOfLeaves": 577,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 0.92435125048868549,
+            "NumberOfTrees": 153,
+            "SubsampleFraction": 0.946212986990597,
+            "MaximumBinCountPerFeature": 252,
+            "FeatureFraction": 0.992240424589819,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 0.4610841490141207,
+            "LabelColumnName": "Sentiment",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.66885522689870514,
+        "RuntimeInSeconds": 0.843,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e6 * e11",
+          "e0": {
+            "OutputColumnNames": [
+              "LoggedIn"
+            ],
+            "InputColumnNames": [
+              "LoggedIn"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "SentimentText",
+            "OutputColumnName": "SentimentText"
+          },
+          "e11": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "LoggedIn",
+              "SentimentText"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "OutputColumnName": "Sentiment",
+            "InputColumnName": "Sentiment",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e6": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 254,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Sentiment",
+            "FeatureColumnName": "Features"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "OneHotEncoding",
+      "e1": "FeaturizeText",
+      "e2": "Concatenate",
+      "e3": "MapValueToKey",
+      "e4": "FastTreeOva",
+      "e5": "FastForestOva",
+      "e6": "LightGbmMulti",
+      "e7": "LbfgsLogisticRegressionOva",
+      "e8": "LbfgsMaximumEntropyMulti",
+      "e9": "SdcaMaximumEntropyMulti",
+      "e10": "SdcaLogisticRegressionOva",
+      "e11": "MapKeyToValue"
+    },
+    "Schema": "e0 * e1 * e2 * e3 * (e4 + e5 + e6 + e7 + e8 + e9 + e10) * e11",
+    "MetricName": "MacroAccuracy",
+    "ModelFilePath": "C:\\src\\MLNetHelpers\\CustomMLModel\\MLModel1.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Type": "ClassificationTrainingOption",
+    "TrainingTime": 20,
+    "LabelColumn": "Sentiment",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}

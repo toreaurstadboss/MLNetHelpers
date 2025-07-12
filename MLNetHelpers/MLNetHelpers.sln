@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveAndLoadTrainedModels", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaliforniaHousingDataRegressionAnalysis", "..\CaliforniaHousingDataRegressionAnalysis\CaliforniaHousingDataRegressionAnalysis.csproj", "{FDBFD26A-8B6F-4773-A064-651751F113A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomMLModel", "..\CustomMLModel\CustomMLModel.csproj", "{C454B4CD-BD9F-4A2B-96D0-6B33358CCB0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLModel1_ConsoleApp1", "..\MLModel1_ConsoleApp1\MLModel1_ConsoleApp1.csproj", "{A617012C-8E3D-586B-ED4C-D187D8C3AC1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{FDBFD26A-8B6F-4773-A064-651751F113A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDBFD26A-8B6F-4773-A064-651751F113A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDBFD26A-8B6F-4773-A064-651751F113A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C454B4CD-BD9F-4A2B-96D0-6B33358CCB0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C454B4CD-BD9F-4A2B-96D0-6B33358CCB0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C454B4CD-BD9F-4A2B-96D0-6B33358CCB0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C454B4CD-BD9F-4A2B-96D0-6B33358CCB0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A617012C-8E3D-586B-ED4C-D187D8C3AC1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A617012C-8E3D-586B-ED4C-D187D8C3AC1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A617012C-8E3D-586B-ED4C-D187D8C3AC1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A617012C-8E3D-586B-ED4C-D187D8C3AC1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
