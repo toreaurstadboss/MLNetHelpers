@@ -3,6 +3,7 @@
     "StopSignDetection_WebApi1": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "https://localhost:65194/swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
